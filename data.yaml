@@ -1,0 +1,11 @@
+# JJH YOLOv8s - Local Training Config
+# val == train intentionally (no holdout split).
+# True evaluation is done on the test split.
+
+path: ./dataset
+train: train/images
+val:   train/images
+test:  test/images
+
+nc: 5
+names: ['handpump', 'lake', 'pine', 'pine_dry', 'well']
